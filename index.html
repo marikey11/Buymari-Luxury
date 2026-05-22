@@ -4,96 +4,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buymari</title>
+<title>BUYMARI PERFUME</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap');
 
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: #0d0d0d;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;500&display=swap');
+
+body{
+    margin:0;
+    background:#0b0b0b;
+    color:white;
+    font-family:'Montserrat',sans-serif;
 }
 
 /* HERO */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: radial-gradient(circle at top, #1a1a1a, #000);
-    padding: 20px;
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:radial-gradient(circle at top,#1a1a1a,#000);
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    margin: 0;
-    letter-spacing: 3px;
-    color: #d4af37;
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:65px;
+    color:#d4af37;
+    margin:0;
+    letter-spacing:4px;
 }
 
-p {
-    font-size: 18px;
-    color: #ccc;
-    max-width: 500px;
-    margin-top: 15px;
+.hero p{
+    color:#cfcfcf;
+    max-width:600px;
+    margin-top:15px;
+    font-size:18px;
 }
 
-/* BUTTON */
-.btn {
-    margin-top: 30px;
-    padding: 14px 30px;
-    background: linear-gradient(135deg, #d4af37, #b88a2a);
-    color: black;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.05);
+.telegram-btn{
+    margin-top:30px;
+    background:linear-gradient(135deg,#d4af37,#b48828);
+    color:black;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 /* SECTION */
-.section {
-    padding: 80px 20px;
-    text-align: center;
+
+.section{
+    padding:70px 20px;
 }
 
-.section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    color: #d4af37;
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#d4af37;
+    font-family:'Playfair Display',serif;
+    margin-bottom:50px;
 }
 
 /* CARDS */
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 40px;
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
-.card {
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 15px;
-    width: 200px;
-    transition: 0.3s;
-    border: 1px solid #2a2a2a;
+.card{
+    background:#151515;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s;
+    border:1px solid #222;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    border-color: #d4af37;
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
 }
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    margin-top:0;
+    color:#fff;
+    font-size:22px;
+}
+
+.price{
+    color:#d4af37;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.notes{
+    color:#cfcfcf;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.buy-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#d4af37;
+    color:black;
+    padding:12px 22px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.footer{
+    text-align:center;
+    padding:50px 20px;
+    color:#888;
+}
+
 </style>
 </head>
 
@@ -101,19 +143,134 @@ p {
 
 <div class="hero">
     <h1>BUYMARI</h1>
-    <p>Люксовая парфюмерия, которая раскрывает твою индивидуальность и стиль</p>
-    <button class="btn">Смотреть коллекцию</button>
+
+    <p>
+        Luxury niche perfumery. 
+        Подчеркни свой стиль ароматом, который запоминается.
+    </p>
+
+    <a class="telegram-btn" href="https://t.me/buymari_parfume" target="_blank">
+        Перейти в Telegram
+    </a>
 </div>
 
 <div class="section">
-    <h2>Наша коллекция</h2>
+
+    <div class="section-title">
+        Хиты коллекции
+    </div>
 
     <div class="cards">
-        <div class="card">Amber Night</div>
-        <div class="card">Rose Gold</div>
-        <div class="card">Black Oud</div>
-        <div class="card">Vanilla Luxe</div>
+
+        <!-- Tobacco Vanille -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=1200&auto=format&fit=crop" alt="Tom Ford">
+
+            <div class="card-content">
+
+                <h3>Tom Ford Tobacco Vanille</h3>
+
+                <div class="price">26 500 ₽</div>
+
+                <div class="notes">
+                    Ноты: табак, ваниль, какао, специи.<br><br>
+
+                    Тёплый, густой и роскошный аромат 
+                    с дорогим сладко-табачным шлейфом.
+                </div>
+
+                <a class="buy-btn" href="https://t.me/buymari_parfume" target="_blank">
+                    Заказать
+                </a>
+
+            </div>
+        </div>
+
+        <!-- LV Afternoon Swim -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1200&auto=format&fit=crop" alt="Louis Vuitton">
+
+            <div class="card-content">
+
+                <h3>Louis Vuitton Afternoon Swim</h3>
+
+                <div class="price">44 000 ₽</div>
+
+                <div class="notes">
+                    Ноты: апельсин, бергамот, мандарин, имбирь.<br><br>
+
+                    Солнечный, свежий и чистый luxury аромат 
+                    с атмосферой отдыха у моря.
+                </div>
+
+                <a class="buy-btn" href="https://t.me/buymari_parfume" target="_blank">
+                    Заказать
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Armani -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1615634262417-3b1cc9fd11c6?q=80&w=1200&auto=format&fit=crop" alt="Armani">
+
+            <div class="card-content">
+
+                <h3>Armani Stronger With You Intensely</h3>
+
+                <div class="price">13 000 ₽</div>
+
+                <div class="notes">
+                    Ноты: ваниль, каштан, корица, амбра.<br><br>
+
+                    Уютный, сладкий и притягательный аромат 
+                    с тёплым мужским характером.
+                </div>
+
+                <a class="buy-btn" href="https://t.me/buymari_parfume" target="_blank">
+                    Заказать
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Fucking Fabulous -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1200&auto=format&fit=crop" alt="Tom Ford Fabulous">
+
+            <div class="card-content">
+
+                <h3>Tom Ford Fucking Fabulous</h3>
+
+                <div class="price">24 000 ₽</div>
+
+                <div class="notes">
+                    Ноты: кожа, миндаль, ваниль, лаванда.<br><br>
+
+                    Дерзкий, сексуальный и статусный аромат 
+                    с кремово-кожаным звучанием.
+                </div>
+
+                <a class="buy-btn" href="https://t.me/buymari_parfume" target="_blank">
+                    Заказать
+                </a>
+
+            </div>
+        </div>
+
     </div>
+</div>
+
+<div class="footer">
+    © BUYMARI PERFUME
 </div>
 
 </body>
