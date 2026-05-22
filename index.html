@@ -1,118 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Buymari Parfume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<title>Buymari Parfume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header {
-      background: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-      letter-spacing: 1px;
-    }
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #000, #1a1a1a);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
 
-    .link {
-      margin-top: 10px;
-      display: block;
-      color: #00c3ff;
-      text-decoration: none;
-    }
+header h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
 
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+header a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #00c3ff;
+  text-decoration: none;
+}
 
-    .product {
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 10px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+/* SEARCH */
+.search {
+  text-align: center;
+  padding: 15px;
+}
 
-    .name {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
+.search input {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
 
-    .price {
-      color: #b12704;
-      font-weight: bold;
-    }
-  </style>
+/* GRID */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.name {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.price {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 12px;
+  background: #00c3ff;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 12px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>BUYMARI PARFUME</h1>
-  <a class="link" href="https://t.me/buymari_parfume" target="_blank">
-    Наш Telegram канал
-  </a>
+  <a href="https://t.me/buymari_parfume" target="_blank">Telegram канал</a>
 </header>
+
+<div class="search">
+  <input type="text" placeholder="Поиск ароматов...">
+</div>
 
 <div class="container">
 
-  <div class="product"><div class="name">LOUIS VUITTON ATTRAPE REVES EDP 100ML</div><div class="price">44 000 ₽</div></div>
-  <div class="product"><div class="name">LOUIS VUITTON L'IMMENSITE EDP 100ML</div><div class="price">44 000 ₽</div></div>
-  <div class="product"><div class="name">LOUIS VUITTON CALIFORNIA DREAM EDP 100ML</div><div class="price">44 000 ₽</div></div>
-  <div class="product"><div class="name">LOUIS VUITTON IMAGINATION EDP 100ML</div><div class="price">44 000 ₽</div></div>
-  <div class="product"><div class="name">LOUIS VUITTON AFTERNOON SWIM EDP 100ML</div><div class="price">44 000 ₽</div></div>
-  <div class="product"><div class="name">LOUIS VUITTON PACIFIC CHILL EDP 100ML</div><div class="price">44 000 ₽</div></div>
+  <div class="card"><div class="name">LOUIS VUITTON ATTRAPE REVES 100ML</div><div class="price">44 000 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</a></div>
+  <div class="card"><div class="name">LOUIS VUITTON L'IMMENSITE 100ML</div><div class="price">44 000 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</a></div>
+  <div class="card"><div class="name">LOUIS VUITTON CALIFORNIA DREAM 100ML</div><div class="price">44 000 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</a></div>
+  <div class="card"><div class="name">LOUIS VUITTON IMAGINATION 100ML</div><div class="price">44 000 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</a></div>
+  <div class="card"><div class="name">LOUIS VUITTON AFTERNOON SWIM 100ML</div><div class="price">44 000 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</a></div>
+  <div class="card"><div class="name">LOUIS VUITTON PACIFIC CHILL 100ML</div><div class="price">44 000 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</a></div>
 
-  <div class="product"><div class="name">CLIVE CHRISTIAN XXI ART DECO AMBERWOOD EDP 50ML</div><div class="price">25 000 ₽</div></div>
-  <div class="product"><div class="name">CLIVE CHRISTIAN PRIVATE COLLECTION E CASHMERE MUSK</div><div class="price">21 500 ₽</div></div>
-  <div class="product"><div class="name">CLIVE CHRISTIAN MATSUKITA JUMP UP AND KISS ME 50ML</div><div class="price">24 000 ₽</div></div>
+  <div class="card"><div class="name">CLIVE CHRISTIAN XXI AMBERWOOD 50ML</div><div class="price">25 000 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</a></div>
+  <div class="card"><div class="name">CLIVE CHRISTIAN CASHMERE MUSK</div><div class="price">21 500 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</a></div>
 
-  <div class="product"><div class="name">CREED AVENTUS ABSOLU EDP 75ML</div><div class="price">33 500 ₽</div></div>
-  <div class="product"><div class="name">CREED AVENTUS ABSOLU EDP 100ML</div><div class="price">37 500 ₽</div></div>
-  <div class="product"><div class="name">CREED AVENTUS (M) EDP 100ML</div><div class="price">27 500 ₽</div></div>
+  <div class="card"><div class="name">CREED AVENTUS ABSOLU 100ML</div><div class="price">37 500 ₽</div><a class="btn" href="https://t.me/buymari_parfume">Заказать</
 
-  <div class="product"><div class="name">TOM FORD FUCKING FABULOUS EDP 50ML</div><div class="price">24 000 ₽</div></div>
-  <div class="product"><div class="name">TOM FORD TOBACCO VANILLE EDP 100ML</div><div class="price">26 500 ₽</div></div>
-  <div class="product"><div class="name">TOM FORD TUSCAN LEATHER EDP 50ML</div><div class="price">19 500 ₽</div></div>
-  <div class="product"><div class="name">TOM FORD NOIR EXTREME EDP 100ML</div><div class="price">14 000 ₽</div></div>
 
-  <div class="product"><div class="name">INITIO ATOMIC ROSE EDP 90ML</div><div class="price">19 000 ₽</div></div>
-  <div class="product"><div class="name">INITIO OUD FOR GREATNESS EDP 90ML</div><div class="price">20 000 ₽</div></div>
-
-  <div class="product"><div class="name">MAISON CRIVELLI OUD MARACUJA EXT 50ML</div><div class="price">26 000 ₽</div></div>
-
-  <div class="product"><div class="name">ARMANI STRONGER WITH YOU INTENSELY 100ML</div><div class="price">13 000 ₽</div></div>
-
-  <div class="product"><div class="name">DIOR SAUVAGE ELIXIR 100ML</div><div class="price">20 500 ₽</div></div>
-
-  <div class="product"><div class="name">BVLGARI TYGAR EDP 125ML</div><div class="price">41 000 ₽</div></div>
-
-  <div class="product"><div class="name">DOLCE & GABBANA THE ONE EDP 100ML</div><div class="price">8 000 ₽</div></div>
-
-  <div class="product"><div class="name">BOADICEA BLUE SAPPHIRE SUPERCHARGED PARFUM 100ML</div><div class="price">73 000 ₽</div></div>
-
-  <div class="product"><div class="name">TIZIANA TERENZI KIRKE OVERDOSE EXTRAIT 100ML</div><div class="price">23 000 ₽</div></div>
-
-  <div class="product"><div class="name">AMOUAGE OUTLANDS EDP 100ML</div><div class="price">41 000 ₽</div></div>
-
-  <div class="product"><div class="name">BOUCHERON OUD DE CARTHAGE 125ML</div><div class="price">11 000 ₽</div></div>
-
-  <div class="product"><div class="name">MARC ANTOINE GANYMEDE EDP 100ML</div><div class="price">22 500 ₽</div></div>
-
-</div>
-
-</body>
-</html>
