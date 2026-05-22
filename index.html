@@ -1,50 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Buymari</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            background: #111;
-            color: white;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buymari</title>
 
-        header {
-            padding: 60px 20px;
-            background: black;
-        }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap');
 
-        h1 {
-            font-size: 40px;
-            color: #d4af37;
-        }
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
 
-        p {
-            font-size: 18px;
-            color: #ccc;
-        }
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    padding: 20px;
+}
 
-        .btn {
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #d4af37;
-            color: black;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
-    </style>
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 3px;
+    color: #d4af37;
+}
+
+p {
+    font-size: 18px;
+    color: #ccc;
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #d4af37, #b88a2a);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #d4af37;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    transition: 0.3s;
+    border: 1px solid #2a2a2a;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Buymari</h1>
-    <p>Парфюмерия, которая подчёркивает твою индивидуальность</p>
+<div class="hero">
+    <h1>BUYMARI</h1>
+    <p>Люксовая парфюмерия, которая раскрывает твою индивидуальность и стиль</p>
     <button class="btn">Смотреть коллекцию</button>
-</header>
+</div>
+
+<div class="section">
+    <h2>Наша коллекция</h2>
+
+    <div class="cards">
+        <div class="card">Amber Night</div>
+        <div class="card">Rose Gold</div>
+        <div class="card">Black Oud</div>
+        <div class="card">Vanilla Luxe</div>
+    </div>
+</div>
 
 </body>
 </html>
